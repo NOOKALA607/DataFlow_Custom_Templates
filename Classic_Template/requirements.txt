@@ -1,0 +1,9 @@
+apache-beam[gcp]==2.53.0
+zstandard==0.22.0
+objsize>=0.6.1
+
+# For working with Google Cloud Storage (GCS) — required if you're reading/writing GCS files
+google-cloud-storage==2.16.0
+
+
+
