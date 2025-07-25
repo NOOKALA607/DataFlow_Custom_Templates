@@ -1,0 +1,11 @@
+# Build Docker image
+docker build -t us-central1-docker.pkg.dev/learn-436612/employee-template/employee-service .
+
+# Authenticate Docker with Artifact Registry
+gcloud auth configure-docker us-central1-docker.pkg.dev
+
+# Push the image
+docker push us-central1-docker.pkg.dev/learn-436612/employee-template/employee-service
+
+# Create and Build Flex template
+https://cloud.google.com/dataflow/docs/guides/templates/using-flex-templates#python

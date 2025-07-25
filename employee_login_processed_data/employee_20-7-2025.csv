@@ -1,0 +1,6 @@
+EmployeeID,Name,Department,FirstLoginTime,LastLogoutTime
+E001,John Doe,Engineering,2025-07-20 09:15:00,2025-07-20 17:30:00
+E002,Jane Smith,HR,2025-07-20 09:05:00,2025-07-20 17:20:00
+E003,Robert Brown,Finance,2025-07-20 09:30:00,2025-07-20 11:45:00
+E004,Alice Johnson,Marketing,2025-07-20 10:00:00,2025-07-20 18:00:00
+E005,David Wilson,IT,2025-07-20 08:45:00,2025-07-20 17:15:00

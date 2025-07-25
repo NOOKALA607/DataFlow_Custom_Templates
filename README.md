@@ -21,7 +21,7 @@ Usage Example:
   --region your-region**
   
 
-** 2. Flex Template**
+**2. Flex Template**
 ✅ Overview:
 1. A more flexible and modern alternative to classic templates.
 2. Uses a Docker container to run your pipeline.

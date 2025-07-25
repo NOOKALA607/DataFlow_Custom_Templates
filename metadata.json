@@ -1,0 +1,20 @@
+{
+  "name": "GCS to BQ Daily Employee Upload",
+  "description": "Process daily CSV login records from GCS and load summarized output into BigQuery.",
+  "sdk_language": "PYTHON",
+  "image": "us-central1-docker.pkg.dev/learn-436612/employee-template/employee-service",
+  "parameters": [
+    {
+      "name": "input_csv_file",
+      "label": "employee",
+      "helpText": "gs://manu_3347/df_employee/employee_20-7-2025.csv",
+      "paramType": "TEXT"
+    },
+    {
+      "name": "output_table",
+      "label": "employee",
+      "helpText": "learn-436612.Landing.Employee_Attendance",
+      "paramType": "TEXT"
+    }
+  ]
+}
