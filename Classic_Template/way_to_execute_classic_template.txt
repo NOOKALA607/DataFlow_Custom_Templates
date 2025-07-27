@@ -1,0 +1,10 @@
+Problem Statement
+Identify Employee Presents in Office with their Login and Logouts Times
+
+1. Create .py transformations file
+
+2. Generate classic Template and execute that
+sh generate_classic_template.sh
+
+3. run classic Template with 
+sh run_df_job_with_classic_template.sh

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python F:/GCP_Projects/DataFlow_Custom_Templates/Codes/Transformation_to_bigquery.py \
+python F:/GCP_Projects/DataFlow_Custom_Templates/Classic_Template/Transformation_to_bigquery.py \
 --runner=DataflowRunner \
 --project=learn-436612 \
 --region=us-central1 \

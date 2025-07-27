@@ -1,6 +1,0 @@
-{
-  "service_account_key_path": "F:\\GCP_Projects\\service_account\\learn-436612-b516c10056b6.json",
-  "bucket_name": "manu_3347",
-  "source_file_path": "F:\\GCP_Projects\\DataFlow_Custom_Templates\\employee_login_raw_data\\employee_20-7-2025.csv",
-  "destination_folder": "df_employee"
-}
