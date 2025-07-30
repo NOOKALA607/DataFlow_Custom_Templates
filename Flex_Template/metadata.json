@@ -1,20 +1,29 @@
 {
-  "name": "GCS to BQ Daily Employee Upload",
+  "name": "Flex GCS to BQ Daily Employee Upload",
   "description": "Process daily CSV login records from GCS and load summarized output into BigQuery.",
-  "sdk_language": "PYTHON",
-  "image": "us-central1-docker.pkg.dev/learn-436612/employee-template/employee-service",
+  "streaming": false,
+  "supportsAtLeastOnce": false,
+  "supportsExactlyOnce": true,
   "parameters": [
     {
       "name": "input_csv_file",
-      "label": "employee",
-      "helpText": "gs://manu_3347/df_employee/employee_20-7-2025.csv",
-      "paramType": "TEXT"
+      "label": "Flex Input CSV File",
+      "helpText": "GCS URI of the employee login CSV, e.g. gs://learn_gcs/df_employee/Employee_Login_Raw_Data/employee_2025-07-20.csv",
+      "paramType": "TEXT",
+      "isOptional": false,
+      "regexes": ["^gs://.+\\.csv$"]
     },
     {
       "name": "output_table",
-      "label": "employee",
-      "helpText": "learn-436612.Landing.Employee_Attendance",
-      "paramType": "TEXT"
+      "label": "Flex BigQuery Output Table",
+      "helpText": "BigQuery table spec, in project:dataset.table format, e.g. learn-436612:Landing.Employee_Attendance",
+      "paramType": "TEXT",
+      "isOptional": false,
+      "regexes": ["^[^:]+:[^.]+\\..+$"]
     }
-  ]
+  ],
+  "sdk_info": {
+    "language": "PYTHON"
+  },
+  "image": "us-central1-docker.pkg.dev/learn-436612/employee-template/employee-service"
 }
