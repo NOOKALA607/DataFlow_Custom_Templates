@@ -9,3 +9,7 @@ docker push us-central1-docker.pkg.dev/learn-436612/employee-template/employee-s
 
 # Create and Build Flex template
 https://cloud.google.com/dataflow/docs/guides/templates/using-flex-templates#python
+
+1. Create Docker Image with Transformation file
+2. Build Flex Template
+3. Run Flex Template
